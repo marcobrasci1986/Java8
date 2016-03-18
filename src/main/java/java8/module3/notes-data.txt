@@ -1,0 +1,26 @@
+4 concepts:
+------------
+
+Instant -> nanosecond precision
+Duration -> amount of time between Instants
+
+LocalDate -> Day precision
+Period -> amount of time between LocalDates
+
+DateAdjuster:
+------------
+Add or subtract amount of time to an Instant or a LocalDate
+
+LocalTime: (hours + minutes)
+----------
+Time of day -> 16:40 uur
+
+ZonedTime:
+----------
+
+Bridges between old API:
+------------------------
+
+Date date = Date.of(instant); // API -> Legacy
+Instant instant = date.toInstant(); // legacy -> new API
+
