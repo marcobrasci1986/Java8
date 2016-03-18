@@ -7,9 +7,17 @@ public class Person {
 
     private String name;
     private int age;
+    private Gender gender;
 
     public Person(String name, int age) {
         this.name = name;
+        this.age = age;
+        this.gender = Gender.MALE;
+    }
+
+    public Person(String name, Gender gender, int age) {
+        this.name = name;
+        this.gender = gender;
         this.age = age;
     }
 
