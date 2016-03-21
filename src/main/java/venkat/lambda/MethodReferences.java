@@ -25,6 +25,8 @@ public class MethodReferences {
                 .map(String::valueOf)
 //                .reduce("", (carry, str) -> carry.concat(str));
                 .reduce("", String::concat);
+        System.out.println("Hello, world" +
+                "");
 
         System.out.println(concat);
     }
