@@ -15,7 +15,7 @@ public class CreateMapGrouping {
 
     public static void main(String[] args) {
 
-        List<Person> people = CreateMap.createPerson();
+        List<Person> people = PersonMother.createPerson();
 
 
         Map<String, List<Person>> collect = people.stream()

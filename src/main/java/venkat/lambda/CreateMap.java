@@ -15,7 +15,7 @@ public class CreateMap {
 
     public static void main(String[] args) {
 
-        List<Person> people = createPerson();
+        List<Person> people = PersonMother.createPerson();
 
         // Maps with name + age as key, person as value
         Map<String, Person> map = people.stream()
@@ -29,16 +29,5 @@ public class CreateMap {
 
     }
 
-    public static List<Person> createPerson(){
-        return Arrays.asList(
-                new Person("Sara", Gender.FEMALE, 20),
-                new Person("Sara", Gender.FEMALE, 22),
-                new Person("Bob", Gender.MALE, 20),
-                new Person("Paula", Gender.FEMALE, 32),
-                new Person("Paul", Gender.MALE, 32),
-                new Person("Jack", Gender.MALE, 2),
-                new Person("Jack", Gender.MALE, 72),
-                new Person("Jill", Gender.FEMALE, 12)
-        );
-    }
+
 }
