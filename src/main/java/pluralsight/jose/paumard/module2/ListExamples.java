@@ -1,7 +1,7 @@
 package pluralsight.jose.paumard.module2;
 
 import domain.Person;
-import venkat.lambda.PersonMother;
+import mother.PersonMother;
 
 import java.util.Comparator;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by MaBa on 21/03/16.
  */
-public class MainApiCollection {
+public class ListExamples {
 
     public static void main(String[] args) {
         List<Person> people = PersonMother.createPerson2();
