@@ -8,6 +8,7 @@ public class Person {
     private String name;
     private int age;
     private Gender gender;
+    private Long salary;
 
     public Person(String name, int age) {
         this.name = name;
@@ -19,6 +20,12 @@ public class Person {
         this.name = name;
         this.gender = gender;
         this.age = age;
+    }
+    public Person(String name, Gender gender, int age, long salary) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.salary = salary;
     }
 
     public String getName() {
@@ -37,6 +44,13 @@ public class Person {
         this.age = age;
     }
 
+    public Long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Long salary) {
+        this.salary = salary;
+    }
 
     @Override
     public String toString() {
